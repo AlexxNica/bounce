@@ -10,8 +10,8 @@ This has several advantages over traditional user management solutions:
 
 # How does Bounce Work?
 
-<img src="http://159.203.35.173:8080/images/bounce-screen.png"/>
+Bounce is fairly simple. First the user is asked for a ricochet id. Bounce then constructs an encrypted token and sends a message to the ricochet id.
 
-Bounce is fairly simple. First the user is asked for a ricochet id. Bounce then constructs an encrypted token and sends a message to the ricochet id. Finally the user copies that id back to the site, and the site valids that the token is valid
+The message contains a link which the user can click on to authenticate themselves to the site. The link contains an encrypted token which can be verified by the bounce service.
 
 Bounce is based on <a href="https://github.com/s-rah/go-ricochet"/>go-ricochet</a>
